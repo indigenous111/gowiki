@@ -1,0 +1,21 @@
+<table width="100%">
+  <tr>
+    <td>
+      <h1 style="color:blue;">Editing {{.Title}}</h1>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <div style="font-size:11pt;color:green">Edit the page content here.</div>
+      <form action="/save/{{.Title}}" method="POST">
+        <div><textarea name="body" rows="20" cols="80">{{printf "%s" .Body}}</textarea></div>
+        <div><input type="submit" value="Save"></div>
+      </form>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <div style="float:right; font-size:8pt;">&copy; Indigenous Wiki, 2020 <sup>&reg;</sup></div>
+    </td>
+  </tr>
+</table>
